@@ -206,7 +206,7 @@ def write_main_page():
 
 def train (): 
         #Lade csv
-    daten = pd.read_csv('/Users/sebastianarens/streamlit/streamlit/corneal_dystrophies - corneal_dystrophies _data Kopie(2).csv')
+    daten = pd.read_csv('/corneal_dystrophies - corneal_dystrophies _data Kopie(2).csv')
 
 
     daten = daten.fillna('unknown')
