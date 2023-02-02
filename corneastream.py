@@ -194,7 +194,8 @@ def write_main_page():
     erster = first_place
     first_place = first_place.replace("'", "")
 
-
+    with open('read.txt', 'w') as file:
+            file.writelines(f"{first_place}")
                     
 
     
