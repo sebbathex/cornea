@@ -206,7 +206,7 @@ def write_main_page():
 
 def train (): 
         #Lade csv
-    daten = pd.read_csv('https://github.com/sebbathex/cornea/blob/main/corneal_dystrophies%20-%20corneal_dystrophies%20_data%20Kopie(2).csv')
+    daten = pd.read_csv('corneal_dystrophies - corneal_dystrophies _data Kopie(2).csv')
 
 
     daten = daten.fillna('unknown')
