@@ -44,7 +44,7 @@ def write_main_page():
 
 
     with fs.open(filename, 'w') as f:
-          content = f.read()
+          #content = f.read()
           f.write('neue Zeile')  
 
    
