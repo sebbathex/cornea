@@ -691,11 +691,18 @@ def write_page_1():
 
                     
 
-    
+    if st.button(): 
+        fs = s3fs.S3FileSystem(anon=False)
+        filename = "sebbax/example.txt"
+
+
+        with fs.open(filename, 'w') as f:
+            #content = f.read()
+            f.write('neue Zeile') 
 
     
-    if myvariable and myvariable2:
-        st.success("The most likely disease given your input is : {} and {}".format(first_place, second_place))
+    #if myvariable and myvariable2:
+       # st.success("The most likely disease given your input is : {} and {}".format(first_place, second_place))
 
  
                  
