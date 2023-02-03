@@ -12,6 +12,7 @@ from sklearn.neural_network import MLPClassifier
 from sklearn import svm
 from collections import Counter
 import s3fs
+import csv
 
 
 
@@ -693,7 +694,13 @@ def write_page_1():
 
     if st.button('Submit data!'): 
         fs = s3fs.S3FileSystem(anon=False)
-        filename = "sebbax/example.txt"
+        filename = "sebbax/example.csv"
+        
+        with fs.open(filename, 'a', newline='') as file:
+            writer = csv.writer(file)
+
+            # Write the new row to the file
+            writer.writerow(['new_data_1', 'new_data_2', 'new_data_3'])
 
 
         with fs.open(filename, 'w') as f:
