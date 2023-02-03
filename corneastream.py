@@ -722,7 +722,7 @@ def write_page_1():
 
             # Write the new row to the file
             writer.writerow([question1 ,question2, myvariable, myvariable2, myvariable3, myvariable4, myvariable5, myvariable6, myvariable7, myvariable8, myvariable9, myvariable10, myvariable11, myvariable12, myvariable13, myvariable14, myvariable15, myvariable16, myvariable17, myvariable18, myvariable19, myvariable20, myvariable21, myvariable22, myvariable23])
-
+        st.write('Thank you for your participation!')
 
         #with fs.open(filename, 'w') as f:
             #content = f.read()
