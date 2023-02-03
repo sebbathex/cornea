@@ -49,7 +49,7 @@ def write_main_page():
 
    
     
-    st.header(content)
+    st.header('Hallo ')
 
     yes_no_unknown = {"I'm not sure!": 'unknown', 'Yes': 'Yes', 'No': 'No'}
 
