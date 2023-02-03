@@ -549,7 +549,7 @@ def write_page_1():
        
         
         questions2 = st.selectbox("Select your choice", myvariabledict_choice)
-        question2 = myvariabledict_choice[questions1]
+        question2 = myvariabledict_choice[questions2]
     
     
     
