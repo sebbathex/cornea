@@ -52,8 +52,8 @@ def write_main_page():
     
     st.header('Cornea rare disease finder: ERN-EYE')
     
-    st.write('© Sebastian Arens, Klinik und Polyklinik für Augenheilkunde, Universitätsklinikum Freiburg, sebastian.arens@uniklinik-freiburg.de
-                This program is for research and educational purposes only and not a verified tool for diagnosis!')
+    st.write('© Sebastian Arens, Klinik und Polyklinik für Augenheilkunde, Universitätsklinikum Freiburg, sebastian.arens@uniklinik-freiburg.de'
+    st.write('This program is for research and educational purposes only and not a verified tool for diagnosis!')
 
     yes_no_unknown = {"I'm not sure!": 'unknown', 'Yes': 'Yes', 'No': 'No'}
 
