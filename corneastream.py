@@ -13,12 +13,7 @@ from sklearn import svm
 from collections import Counter
 import s3fs
 
-fs = s3fs.S3FileSystem(anon=False)
 
-with fs.open(filename) as f:
-      return f.read().decode("utf-8")
-
-content = read_file("sebbax/example.txt")
 
 
 
