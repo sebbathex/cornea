@@ -43,7 +43,7 @@ def write_main_page():
     filename = "sebbax/example.txt"
 
 
-    with fs.open(filename, 'w+') as f:
+    with fs.open(filename, 'w') as f:
           content = f.read()
           f.write('neue Zeile')  
 
