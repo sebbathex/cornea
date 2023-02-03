@@ -13,6 +13,15 @@ from sklearn import svm
 from collections import Counter
 import s3fs
 
+fs = s3fs.S3FileSystem(anon=False)
+
+@st.experimental_memo(ttl=60)
+def read_file(filename):
+    with fs.open(filename) as f:
+        return f.read().decode("utf-8")
+
+global content = read_file("sebbax/example.txt")
+
 
 
 
@@ -37,11 +46,10 @@ def write_navigation_bar():
 
 def write_main_page():
     
-    fs = s3fs.S3FileSystem(anon=False)
     
    
     
-    st.header("Cornea rare disease finder")
+    st.header(content)
 
     yes_no_unknown = {"I'm not sure!": 'unknown', 'Yes': 'Yes', 'No': 'No'}
 
