@@ -311,9 +311,9 @@ def train ():
     
 
 def write_page_2():
-    daten1 = pd.read_csv('corneal_dystrophies - corneal_dystrophies _data Kopie(2).csv')
+    daten = pd.read_csv('corneal_dystrophies - corneal_dystrophies _data Kopie(2).csv')
     st.header("Data presentation")
-    st.write("Data presentation", daten1)
+    st.write("Data presentation", daten)
     
     
 
