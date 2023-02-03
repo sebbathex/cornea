@@ -33,7 +33,7 @@ def write_navigation_bar():
         write_main_page()
     elif page == "Study":
         write_page_1()
-    elif page == "About":
+    elif page == "Data":
         write_page_2()
 
 
@@ -311,8 +311,10 @@ def train ():
     
 
 def write_page_2():
-    st.header("About")
-    st.write("This is page 2.")
+    st.header("Data presentation")
+    st.write("Data presentation")
+    daten1 = pd.read_csv('corneal_dystrophies - corneal_dystrophies _data Kopie(2).csv')
+    st.write(daten1)
 
 
 def transform_ergebnisse(liste):
@@ -532,10 +534,25 @@ def write_page_1():
     myvariabledict3 = {"I'm not sure!": 'unknown', 'Endothelium': 'Endothelium', 'Epithelium': 'Epithelium', 'Stroma': 'Stroma', 'Stroma/Endothelium': 'Endo/Stroma'}
 
     myvariabledictwho = {"Corneal Expert": "expert", "Assistant doctor": "assistant", "Ophtalmologist": "ophtalmologist"}
+    
+    myvariabledict_choice = ['Map-dot-fingerprint dystrophy', 'Epithelial recurrent erosion dystrophy, Franceschetti', 'Posterior polymorphous corneal dystrophy', 'Macular corneal dystrophy', 'Subepithelial mucinous corneal dystrophy', 'Meesmann epithelial corneal dystrophy', 
+                             'Lisch epithelial corneal dystrophy', 'Gelatinous drop- like corneal dystrophy', 'Lattice corneal dystrophy', 'Granular corneal dystrophy', 
+                            'Avellino', 'Reis–Bücklers corneal dystrophy', 'Thiel–Behnke corneal dystrophy', 'Schnyder corneal dystrophy', 'Fleck corneal dystrophy', 
+                             'Posterior amorphous corneal dystrophy', 'Central cloudy dystrophy of François', 'Pre-Descemet corneal dystrophy', 'Congenital hereditary endothelial dystrophy', 
+                             'Congenital stromal corneal dystrophy', 'X-linked endothelial corneal dystrophy', 'Grayson–Wilbrandt corneal dystrophy']
 
-    st.header("Accordion Example")
+    st.header("Cornea rare disease finder study page")
 
     # Use st.beta_expander to create an accordion section
+    
+    with st.expander("My diagnosis is:"):
+       
+        
+        questions2 = st.selectbox("Select your choice", myvariabledict_choice)
+        question2 = myvariabledict_choice[questions1]
+    
+    
+    
     with st.expander("Questions about me:"):
        
         
