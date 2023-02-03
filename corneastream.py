@@ -703,9 +703,9 @@ def write_page_1():
             writer.writerow(['new_data_1', 'new_data_2', 'new_data_3'])
 
 
-        with fs.open(filename, 'w') as f:
+        #with fs.open(filename, 'w') as f:
             #content = f.read()
-            f.write('neue Zeile') 
+         #   f.write('neue Zeile') 
 
     
     #if myvariable and myvariable2:
