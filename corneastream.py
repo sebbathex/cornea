@@ -311,10 +311,11 @@ def train ():
     
 
 def write_page_2():
-    st.header("Data presentation")
-    st.write("Data presentation")
     daten1 = pd.read_csv('corneal_dystrophies - corneal_dystrophies _data Kopie(2).csv')
-    st.write(daten1)
+    st.header("Data presentation")
+    st.write("Data presentation", daten1)
+    
+    
 
 
 def transform_ergebnisse(liste):
