@@ -11,7 +11,7 @@ from sklearn.naive_bayes import CategoricalNB
 from sklearn.neural_network import MLPClassifier
 from sklearn import svm
 from collections import Counter
-import boto3
+import s3fs
 
 
 
@@ -37,17 +37,9 @@ def write_navigation_bar():
 
 def write_main_page():
     
-        # Create a client object for the S3 service
-    s3 = boto3.client("s3")
-
-    # Create a bucket if it doesn't already exist
-    bucket_name = "sebbax"
-    s3.create_bucket(Bucket=bucket_name)
-
-    # Write text to a file in S3
-    file_name = "example.txt"
-    text = "Hello World!"
-    s3.put_object(Bucket=bucket_name, Key=file_name, Body=text)     
+    fs = s3fs.S3FileSystem(anon=False)
+    
+   
     
     st.header("Cornea rare disease finder")
 
