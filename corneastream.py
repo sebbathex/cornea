@@ -691,7 +691,7 @@ def write_page_1():
 
                     
 
-    if st.button(): 
+    if st.button('Submit data!'): 
         fs = s3fs.S3FileSystem(anon=False)
         filename = "sebbax/example.txt"
 
