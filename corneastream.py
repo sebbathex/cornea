@@ -15,12 +15,10 @@ import s3fs
 
 fs = s3fs.S3FileSystem(anon=False)
 
-@st.experimental_memo(ttl=60)
-def read_file(filename):
-    with fs.open(filename) as f:
-        return f.read().decode("utf-8")
+with fs.open(filename) as f:
+      return f.read().decode("utf-8")
 
-global content = read_file("sebbax/example.txt")
+content = read_file("sebbax/example.txt")
 
 
 
@@ -46,7 +44,13 @@ def write_navigation_bar():
 
 def write_main_page():
     
-    
+    fs = s3fs.S3FileSystem(anon=False)
+    filename = "sebbax/example.txt"
+
+
+    with fs.open(filename) as f:
+          content = f.read()
+
    
     
     st.header(content)
