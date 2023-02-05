@@ -534,7 +534,7 @@ def write_page_1():
 
     myvariabledict3 = {"I'm not sure!": 'unknown', 'Endothelium': 'Endothelium', 'Epithelium': 'Epithelium', 'Stroma': 'Stroma', 'Stroma/Endothelium': 'Endo/Stroma'}
 
-    myvariabledictwho = {"Corneal Expert": "expert", "Assistant doctor": "assistant", "Ophtalmologist": "ophtalmologist"}
+    myvariabledictwho = {"Corneal Expert (Hornhautexperte)": "expert", "Assistant doctor (Assistenzarzt)": "assistant", "Ophtalmologist (Facharzt)": "ophtalmologist"}
     
     myvariabledict_choice = ['Map-dot-fingerprint dystrophy', 'Epithelial recurrent erosion dystrophy, Franceschetti', 'Posterior polymorphous corneal dystrophy', 'Macular corneal dystrophy', 'Subepithelial mucinous corneal dystrophy', 'Meesmann epithelial corneal dystrophy', 
                              'Lisch epithelial corneal dystrophy', 'Gelatinous drop- like corneal dystrophy', 'Lattice corneal dystrophy', 'Granular corneal dystrophy', 
