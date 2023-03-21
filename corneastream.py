@@ -50,7 +50,7 @@ def write_main_page():
 
    
     
-    st.header('Cornea rare disease finder: ERN-EYE')
+    st.header('ERN EYE corneal dystrophy teaching tool')
     
     st.write('© Sebastian Arens, Klinik und Polyklinik für Augenheilkunde, Universitätsklinikum Freiburg, sebastian.arens@uniklinik-freiburg.de')
     st.write('This program is for research and educational purposes only and not a verified tool for diagnosis!')
